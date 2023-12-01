@@ -1,8 +1,8 @@
 # ML-epileptic-seizures
  
-ML-epileptic-seizures
 # Prediction and Detection of Epileptic Seizures 
-##Introduction 
+
+## Introduction 
 This report presents the outcomes of a project undertaken as part of the Computational Learning course. The focus of this project is on the prediction and detection of epileptic seizures. Employing tools from Machine Learning, specifically those provided by MATLAB as an external application, we delve into the intricacies of the problem and discuss the results obtained from the trained models.
 
 ## Problem Overview 
