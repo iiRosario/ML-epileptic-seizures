@@ -1,0 +1,28 @@
+function  postProcessing(result, target)
+    
+    indexes = [];
+    count = [0 0 0];
+    for i = 1:10:length(result)-10
+        count(1) = nnz(find(result(i:i+9) == 1));
+        count(2) = nnz(find(result(i:i+9) == 2));
+        count(3) = nnz(find(result(i:i+9) == 3));
+        
+        [max_count, index_count] = max(count);
+        
+        for j = i:i+9
+            if(result(j) == index_count)
+    
+            end
+        end
+        
+        if(max_count >= 5)
+
+            indexes = [indexes ];
+        end
+        
+            
+    end
+
+   
+    [sens_pred, spec_pred, sens_det, spec_det] = confMatrix(result, target)
+end

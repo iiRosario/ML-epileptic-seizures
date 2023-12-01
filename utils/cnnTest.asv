@@ -1,0 +1,34 @@
+%funçao que testa o modelo de CNN
+function resultado = cnnTest(patient)
+    
+    load ../models/classifiers/CNN_63502_AUTO_B1_PSize2_PStride1_NF20_FS10_NL3_LS1_E100.mat;
+    if(patient == 1)
+        load '../dataset/44202.mat' FeatVectSel Trg
+    elseif(patient == 2)
+        load '../dataset/63502.mat' FeatVectSel Trg 
+    end
+    P = FeatVectSel;
+    T = Trg;
+    % Divinding the dataset and target into treino + test
+    [data_treino,data_test,target_treino,target_test] = divideDataset(P,T ,0.85);
+    
+    target_test = correctTarget(target_test);
+    
+    % INVERTING P AND T
+    data_test = data_test';
+    target_test = target_test';
+
+    
+ 
+
+    [data_4D_test, target_4D_test] = ccn_pre_processing(data_test,  target_test);
+
+    result = classify(net, data_4D_test);
+    
+    target = grp2idx(target_4D_test)';
+    result = grp2idx(result)';
+    
+    [sens_pred, spec_pred, sens_det, spec_det] = confMatrix(result, target)
+    
+    % postProcessing(result, target_test)
+end
