@@ -2,11 +2,11 @@
  
 # Prediction and Detection of Epileptic Seizures 
 
-## Introduction 
-This report presents the outcomes of a project undertaken as part of the Computational Learning course. The focus of this project is on the prediction and detection of epileptic seizures. Employing tools from Machine Learning, specifically those provided by MATLAB as an external application, we delve into the intricacies of the problem and discuss the results obtained from the trained models.
-
 ## Problem Overview 
 Epileptic seizures pose a significant challenge in the medical field, and timely prediction and detection are crucial for effective intervention. In this report, we provide a peripheral view of the problem, outlining its importance and the potential impact of accurate predictions on patient care.
+
+## Introduction 
+This report presents the outcomes of a project undertaken as part of the Computational Learning course. The focus of this project is on the prediction and detection of epileptic seizures. Employing tools from Machine Learning, specifically those provided by MATLAB as an external application, we delve into the intricacies of the problem and discuss the results obtained from the trained models.
 
 ## Methodology 
 Our approach involves leveraging Machine Learning techniques, utilizing the capabilities of MATLAB as a powerful external application. The subsequent chapters detail the step-by-step process followed by the authors to arrive at the presented results. We discuss the methodologies employed in training the models, the features selected, and the rationale behind these choices. Results and Discussion In this section, we delve into the conclusions drawn from our study on the detection of epileptic episodes through Computational Learning. Several crucial findings have emerged, shaping our understanding of effective methodologies and model architectures.
