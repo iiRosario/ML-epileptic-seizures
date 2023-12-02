@@ -12,7 +12,8 @@ This report presents the outcomes of a project undertaken as part of the Computa
 Our approach involves leveraging Machine Learning techniques, utilizing the capabilities of MATLAB as a powerful external application. The subsequent chapters detail the step-by-step process followed by the authors to arrive at the presented results. We discuss the methodologies employed in training the models, the features selected, and the rationale behind these choices. Results and Discussion In this section, we delve into the conclusions drawn from our study on the detection of epileptic episodes through Computational Learning. Several crucial findings have emerged, shaping our understanding of effective methodologies and model architectures.
 
 ## Key Discoveries 
-Class Balance and Error Weights: Implementation of class balance and the assignment of error weights (in the case of shallow networks) proved fundamental in achieving balanced and accurate results in the prediction and detection of epileptic episodes. This highlights the importance of addressing class imbalances for improved model performance.
+### Class Balance and Error Weights: 
+Implementation of class balance and the assignment of error weights (in the case of shallow networks) proved fundamental in achieving balanced and accurate results in the prediction and detection of epileptic episodes. This highlights the importance of addressing class imbalances for improved model performance.
 
 ### Autoencoders: 
 Contrary to expectations, the use of autoencoders in our analysis did not demonstrate significant relevance in the obtained results. This finding emphasizes the need for careful consideration and evaluation of different architectural components.
